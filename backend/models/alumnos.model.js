@@ -1,7 +1,7 @@
 //COMO Y EL DONDE SE GUARDAN LOS DATOS
-import{schema, model} from "mongose";
+import{Schema, model} from "mongoose";
 
-const Eschemas = new Schema({
+const alumnos = new Schema({
     name:{
         type:String
     },
@@ -9,4 +9,4 @@ const Eschemas = new Schema({
         type:Number
     }
 })
-export const Modelo = new model("Tabla de alumnos", Eschema)
+export const modelo = new model("Tabla de alumnos", alumnos)

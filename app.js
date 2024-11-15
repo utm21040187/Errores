@@ -5,13 +5,13 @@ import dotenv from "dotenv";
 import {test} from "./backend/controllers/alumnos.controller.js"
 dotenv.config();
 
-mongoose.connect(process.env.urlbase)
-.then(()=>{
-    console.log("jala esta madre")
-})
-.catch((error)=>{
-    console.log("no funciona esta madre ", error)
-})
+mongoose.connect(process.env.urlbd)
+    .then(()=>{
+        console.log("jala esta madre")
+    })
+    .catch((error)=>{
+        console.log("no funciona esta madre " )
+    })
 
 const app=express();
 app.use(cors());
